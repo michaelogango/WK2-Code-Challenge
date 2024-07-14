@@ -1,0 +1,120 @@
+:root {
+    --gradient: linear-gradient(310deg, #FFC800, #00204B);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--gradient);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00204B;
+}
+
+.container #list {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.container .input-field {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #00204B;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 16px;
+}
+
+.container button {
+    padding: 12px 20px;
+    background-color: #FFC800;
+    color: #00204B;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.container button:hover {
+    background-color: #ffa500; 
+}
+
+.container button:active {
+    transform: scale(0.98); 
+}
+
+.container ol {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.container ol li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container ol li:last-child {
+    border-bottom: none;
+}
+
+.container ol li span {
+    flex: 1;
+}
+
+.container ol li button {
+    padding: 8px 12px;
+    background-color: #00204B;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.container ol li button:hover {
+    background-color: #001529; 
+}
+
+.container ol li button:active {
+    transform: scale(0.98);
+}
